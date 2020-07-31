@@ -15,4 +15,8 @@
 ?>
 
 	
+<?php
+    include "layout/layout.php";
+?>
+
 </body>
