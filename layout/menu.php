@@ -24,7 +24,7 @@
         <a class="nav-link" href="#">Shop</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Shop</a>
+        <a class="nav-link" href="#">User</a>
       </li>
     </ul>
   </div>
