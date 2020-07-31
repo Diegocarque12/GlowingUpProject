@@ -21,7 +21,7 @@
         <a class="nav-link" href="#">Contactenos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Shop</a>
+        <a class="nav-link" href="#">Bag</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">User</a>
