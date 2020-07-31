@@ -3,8 +3,10 @@
     &__text{
         padding-top: 3vh;
         padding-bottom: 4vh;
+        display: block;
     }
     &__img{
-        width: 15%;
+        padding-top: 7vh;
+        width: 25%;
     }
 }
