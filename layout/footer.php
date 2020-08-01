@@ -17,7 +17,7 @@
                   <a class="footer__text" href="#">Categorías</a>
                 </li>
                 <li class="">
-                  <a class="footer__text" href="#">Nosotros</a>
+                  <a class="footer__text" href="nosotros.php">Nosotros</a>
                 </li>
                 <li class="">
                   <a class="footer__text" href="#">Contáctenos</a>
@@ -27,13 +27,21 @@
                 </li>
             </ul>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-auto col-sm-6 col-md-6 col-lg-6 col-xl-6">
+    </div>
+    <div class="row justify-content-center">
+            <div class="col-auto col-sm-6 col-md-6 col-lg-6 col-xl-2">
+            </div>
+            <div class="col-auto col-sm-6 col-md-6 col-lg-6 col-xl-2">
+            </div>
+            <div class="col-auto col-sm-6 col-md-6 col-lg-6 col-xl-2">
                 <img src="src/icons/instagram.png" alt="" class="footer__iconos">
             </div>
-            <div class="col-auto col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <div class="col-auto col-sm-6 col-md-6 col-lg-6 col-xl-2">
                 <img src="src/icons/whatsapp.png" alt="" class="footer__iconos">
             </div>
+            <div class="col-auto col-sm-6 col-md-6 col-lg-6 col-xl-2">
+            </div>
+            <div class="col-auto col-sm-6 col-md-6 col-lg-6 col-xl-2">
+            </div>
         </div>
-    </div>
 </footer>
