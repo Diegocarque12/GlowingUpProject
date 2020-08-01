@@ -2,11 +2,32 @@
     background-color: $secundario-1;
     &__text{
         padding-top: 3vh;
-        padding-bottom: 4vh;
-        display: block;
+        padding-bottom: 3vh;
+        text-decoration: none;
+        color: $principal-1;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style: none;
+        margin-left: 6vh;
+        margin-right: 6vh;
+        justify-content: center;
+        &:hover{
+            text-decoration: none;
+            color: $principal-1;
+        }
     }
     &__img{
-        padding-top: 7vh;
+        padding-top: 5vh;
         width: 25%;
+        min-width: 300px;
+    }
+    &__iconos{
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+        justify-content: center;
+        width: 5%;
+        min-width: 24px;
+        
     }
 }
