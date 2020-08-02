@@ -1,3 +1,4 @@
 <?php
-    include "layout/layout.php";
+    $title = 'Inicio';
+    include_once "layout/header.php";
 ?>

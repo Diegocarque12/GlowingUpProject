@@ -1,10 +1,23 @@
 .nav{
     background-color: transparent !important;
     &__list{
-        margin-right: 5vw;
+        margin-right: 3vw;
     }
     &__item{
         margin-right: 2vw;
-        margin-right: 2vw;
+        &:hover{
+            text-decoration: underline $principal-2 4px;
+        }
+    }
+    &__link{
+        font-size: 1.2rem;
+        color: black !important;
+    }
+    &__brand{
+        display: none;
+        &--img{
+            max-width: 230px;
+            min-width: 150px;
+        }
     }
 }
