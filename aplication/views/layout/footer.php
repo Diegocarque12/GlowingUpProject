@@ -8,22 +8,22 @@
             <div class="col-auto col-sm-12 col-md-12 col-lg-12 col-xl-12">
                 <ul class="footer__text">
                     <li class="">
-                      <a class="footer__text" href="#">Información Legal</a>
+                      <a class="footer__text" href="index.php?ruta=inicio">Información Legal</a>
                     </li>
                     <li class="">
-                      <a class="footer__text" href="#">Términos</a>
+                      <a class="footer__text" href="index.php?ruta=terminos">Términos</a>
                     </li>
                     <li class="">
-                      <a class="footer__text" href="#">Categorías</a>
+                      <a class="footer__text" href="index.php?ruta=catalogo">Categorías</a>
                     </li>
                     <li class="">
-                      <a class="footer__text" href="nosotros.php">Nosotros</a>
+                      <a class="footer__text" href="index.php?ruta=nosotros">Nosotros</a>
                     </li>
                     <li class="">
-                      <a class="footer__text" href="#">Contáctenos</a>
+                      <a class="footer__text" href="index.php?ruta=contacto">Contáctenos</a>
                     </li>
                     <li class="">
-                      <a class="footer__text" href="#">Envios</a>
+                      <a class="footer__text" href="index.php?ruta=inicio">Envios</a>
                     </li>
                 </ul>
             </div>
