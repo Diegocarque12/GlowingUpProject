@@ -3,7 +3,6 @@
     class RutasControlador{
 
         public function Plantilla(){
-<<<<<<< HEAD
             include "../aplication/views/plantilla.php";
         }
 
@@ -17,9 +16,6 @@
             $respuesta = Modelo::RutasModelo($rutas);
     
             include $respuesta;
-    
-=======
-            include "../views/layout/plantilla.php";
         }
     
     public function Rutas(){
@@ -27,13 +23,9 @@
             $rutas = $_GET["ruta"];
         }else{
             $rutas = "index";
->>>>>>> develop
         }
 
     }
-<<<<<<< HEAD
-=======
 }
 
->>>>>>> develop
 ?>
