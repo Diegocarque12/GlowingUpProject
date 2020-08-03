@@ -17,15 +17,6 @@
     
             include $respuesta;
         }
-    
-    public function Rutas(){
-        if(isset($_GET["ruta"])){
-            $rutas = $_GET["ruta"];
-        }else{
-            $rutas = "index";
-        }
-
-    }
 }
 
 ?>
