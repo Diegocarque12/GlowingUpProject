@@ -18,7 +18,7 @@
         <a class="nav-link nav__link" href="#">Categorias</a>
       </li>
       <li class="nav-item nav__item">
-        <a class="nav-link nav__link" href="nosotros.php">Nosotros</a>
+        <a class="nav-link nav__link" href="index.php?ruta=nosotros">Nosotros</a>
       </li>
       <li class="nav-item nav__item">
         <a class="nav-link nav__link" href="#">Contactenos</a>
