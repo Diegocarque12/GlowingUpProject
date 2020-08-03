@@ -26,8 +26,18 @@
       <li class="nav-item nav__item">
         <a class="nav-link nav__link" href="#">Bag</a>
       </li>
-      <li class="nav-item nav__item">
-        <a class="nav-link nav__link" href="index.php?ruta=login">User</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Admin
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="index.php?ruta=productos">CRUD Producto</a>
+          <a class="dropdown-item" href="index.php?ruta=marcas">CRUD Marcas</a>
+          <a class="dropdown-item" href="index.php?ruta=categorias">CRUD Categoria</a>
+          <a class="dropdown-item" href="index.php?ruta=proveedor">CRUD Proveedor</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="index.php?ruta=usuarios">CRUD Usuarios</a>
+        </div>
       </li>
     </ul>
   </div>
