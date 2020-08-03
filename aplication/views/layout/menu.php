@@ -9,25 +9,25 @@
   <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
     <ul class="navbar-nav nav__list">
       <li class="nav-item active nav__item">
-        <a class="nav-link nav__link" href="#">Inicio <span class="sr-only">(current)</span></a>
+        <a class="nav-link nav__link" href="index.php?ruta=inicio">Inicio <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item nav__item">
-        <a class="nav-link nav__link" href="#">Marcas</a>
+        <a class="nav-link nav__link" href="index.php?ruta=marcas">Marcas</a>
       </li>
       <li class="nav-item nav__item">
-        <a class="nav-link nav__link" href="#">Categorias</a>
+        <a class="nav-link nav__link" href="index.php?ruta=categorias">Categorias</a>
       </li>
       <li class="nav-item nav__item">
         <a class="nav-link nav__link" href="index.php?ruta=nosotros">Nosotros</a>
       </li>
       <li class="nav-item nav__item">
-        <a class="nav-link nav__link" href="#">Contactenos</a>
+        <a class="nav-link nav__link" href="index.php?ruta=contacto">Contactenos</a>
       </li>
       <li class="nav-item nav__item">
         <a class="nav-link nav__link" href="#">Bag</a>
       </li>
       <li class="nav-item nav__item">
-        <a class="nav-link nav__link" href="#">User</a>
+        <a class="nav-link nav__link" href="index.php?ruta=login">User</a>
       </li>
     </ul>
   </div>
