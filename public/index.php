@@ -1,13 +1,7 @@
-<?php
-    $title = 'Inicio';
-    include_once "../aplication/views/layout/header.php";
-?>
+<?php 
 
-<?php
-include_once "../aplication/views/layout/menu.php";
-?>
+require_once "../controllers/rutasC.php";
+require_once "../models/rutasM.php";
 
-
-<?php
-include_once "../aplication/views/layout/footer.php";
-?>
+$rutas = new RutasControlador;
+$rutas -> Plantilla();
