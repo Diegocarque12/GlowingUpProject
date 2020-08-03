@@ -5,12 +5,12 @@ class Modelo{
 
         if($rutas == "nosotros" || $rutas == "contacto" || $rutas == "login" || $rutas == "registro" || $rutas == "catalogo" || $rutas == "carrito"){
 
-            $pagina = "../views/home/".$rutas.".php";
+            $pagina = "../aplication/views/home/".$rutas.".php";
 
         }else if($rutas == "inicio"){
-            $pagina = "../views/home/inicio.php";
+            $pagina = "../aplication/views/home/inicio.php";
         }else{
-            $pagina = "../views/home/inicio.php";
+            $pagina = "../aplication/views/home/inicio.php";
         }
         return $pagina;
     }
