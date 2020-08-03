@@ -1,13 +1,13 @@
 <?php
     $title = 'Inicio';
-    include_once "../aplication/views/layout/header.php";
+    include_once "header.php";
 ?>
 
 <?php
-    include_once "../aplication/views/layout/menu.php";
+    include_once "menu.php";
 ?>
 
 
 <?php
-    include_once "../aplication/views/layout/footer.php";
+    include_once "footer.php";
 ?>
