@@ -3,7 +3,7 @@
 class Modelo{
     static public function RutasModelo($rutas){
 
-        if($rutas == "nosotros" || $rutas == "contacto" || $rutas == "login" || $rutas == "registro" || $rutas == "catalogo" || $rutas == "carrito"){
+        if($rutas == "nosotros" || $rutas == "contacto" || $rutas == "login" || $rutas == "registro" || $rutas == "catalogo" || $rutas == "carrito" || $rutas == "producto" || $rutas == "marca" || $rutas == "producto" || $rutas == "proveedor"){
 
             $pagina = "../aplication/views/home/".$rutas.".php";
 
