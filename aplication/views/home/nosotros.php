@@ -1,5 +1,5 @@
 
-<div class="">
+<div class="container">
     <h1 class="tituloPrincipal text-center">Nosotros</h1>
     <p class="texto">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
