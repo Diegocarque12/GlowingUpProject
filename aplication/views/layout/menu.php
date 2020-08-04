@@ -31,9 +31,9 @@
           Admin
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="<?php echo SERVERURL;?>productos/">CRUD Producto</a>
-          <a class="dropdown-item" href="<?php echo SERVERURL;?>marcas/">CRUD Marcas</a>
-          <a class="dropdown-item" href="<?php echo SERVERURL;?>categorias/">CRUD Categoria</a>
+          <a class="dropdown-item" href="<?php echo SERVERURL;?>producto/">CRUD Producto</a>
+          <a class="dropdown-item" href="<?php echo SERVERURL;?>marca/">CRUD Marcas</a>
+          <a class="dropdown-item" href="<?php echo SERVERURL;?>categoria/">CRUD Categoria</a>
           <a class="dropdown-item" href="<?php echo SERVERURL;?>proveedor/">CRUD Proveedor</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="<?php echo SERVERURL;?>usuarios/">CRUD Usuarios</a>
