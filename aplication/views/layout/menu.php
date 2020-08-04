@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand" href="<?php echo SERVERURL;?>inicio/">
     <h1 class="nav__brand">Glowing Up</h1>
     <img src="<?php echo SERVERURL;?>src/LogoGlowingUp2.png" class="nav__brand--img" alt="">
   </a>
