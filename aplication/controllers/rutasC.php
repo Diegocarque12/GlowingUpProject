@@ -7,12 +7,16 @@
         }
 
         public function Rutas(){
-            if(isset($_GET["ruta"])){
-                $rutas = $_GET["ruta"];
+            if(isset($_GET['ruta'])){
+                $views = explode("/", $_GET['ruta']);
+                if(is_file("../aplication/views/home/".$views[0].".php") || is_file("../aplication/views/admin/".$views[0].".php")){
+                    $rutas = $views[0];
+                }else{
+                    $rutas = "inicio";
+                }
             }else{
-                $rutas = "index";
+                $rutas = "inicio";
             }
-    
             $respuesta = Modelo::RutasModelo($rutas);
     
             include $respuesta;
