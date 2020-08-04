@@ -1,7 +1,7 @@
     <footer class="footer text-center">
         <div class="row">
             <div class="col-auto col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                <img src="src/LogoGlowingUpBlanco.png" alt="" class="footer__img">
+                <img src="<?php echo SERVERURL;?>src/LogoGlowingUpBlanco.png" alt="" class="footer__img">
             </div>
         </div>
         <div class="row">
