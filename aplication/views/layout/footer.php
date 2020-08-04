@@ -34,10 +34,10 @@
                 <div class="col-auto col-sm-6 col-md-6 col-lg-6 col-xl-2">
                 </div>
                 <div class="col-auto col-sm-6 col-md-6 col-lg-6 col-xl-2">
-                    <img src="src/icons/instagram.png" alt="" class="footer__iconos">
+                    <img src="<?php echo SERVERURL;?>src/icons/instagram.png" alt="" class="footer__iconos">
                 </div>
                 <div class="col-auto col-sm-6 col-md-6 col-lg-6 col-xl-2">
-                    <img src="src/icons/whatsapp.png" alt="" class="footer__iconos">
+                    <img src="<?php echo SERVERURL;?>src/icons/whatsapp.png" alt="" class="footer__iconos">
                 </div>
                 <div class="col-auto col-sm-6 col-md-6 col-lg-6 col-xl-2">
                 </div>
