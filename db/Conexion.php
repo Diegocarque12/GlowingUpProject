@@ -1,9 +1,8 @@
 <?php
 class Conexion extends PDO
 {
+    public function __construct(){
 
-    public function __construct()
-    {
         /* Aquí hay que usar la ruta donde se encuentre el archivo con las credenciales*/
         $iniData = parse_ini_file("../config/db.php.ini");
         $host=$iniData["host"];
@@ -50,5 +49,7 @@ class Conexion extends PDO
             echo "ERROR ".$e->getMessage();
         }
     }
+
+
 }
 ?>
