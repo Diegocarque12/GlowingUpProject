@@ -20,7 +20,8 @@ class Producto extends Conexion{
         $this->conexion = new Conexion();
     }
 
-    public function insertProducto(int $idProducto, string $nombre, string $imagenes, string $descripcion_extensa, string $descripcion_breve, decimal $precioVenta, int $cantidad, string $colores, string $estado, decimal $descuento, decimal $valoracion_general, int $idMarca){
+    public function insertProducto(int $idProducto, string $nombre, string $imagenes, string $descripcion_extensa, string $descripcion_breve, decimal $precioVenta, int $cantidad, string $colores, string $estado, decimal $descuento, decimal $valoracion_general, int $idMarca)
+    {
         this->db_idProducto = $idProducto;
         this->db_nombre = $nombre;
         this->db_imagenes = $imagenes;

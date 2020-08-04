@@ -12,10 +12,18 @@
              </div>
              <div class="form-row mb-4">
                 <div class="col-auto col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                    <label for="validationDefault01">Descripción</label>
+                    <label for="validationDefault01">Descripción Extensa</label>
                 </div>
                 <div class="col-auto col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                     <input type="text" class="form-control" id="validationDefault01" value="Descripción" required>
+                     <textarea type="ext" class="form-control" id="validationDefault01" rows="3"required></textarea>
+                 </div>
+             </div>
+             <div class="form-row mb-4">
+                <div class="col-auto col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                    <label for="validationDefault01">Descripción Breve</label>
+                </div>
+                <div class="col-auto col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                     <input type="ext" class="form-control" id="validationDefault01" rows="3"required>
                  </div>
              </div>
              <div class="form-row mb-4">
@@ -23,9 +31,55 @@
                     <label for="validationDefault01">Marca</label>
                 </div>
                 <div class="col-auto col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                     <input type="text" class="form-control" id="validationDefault01" value="Marca" required>
+                    <div class="dropdown text-left">
+                        <a class="btn btn-warning    dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Seleccione
+                        </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                    </div>
+                    </div>
                  </div>
              </div>
+             <div class="form-row mb-4">
+                <div class="col-auto col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                    <label for="validationDefault01">Categoría</label>
+                </div>
+                <div class="col-auto col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                    <div class="dropdown text-left">
+                        <a class="btn btn-warning    dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Seleccione
+                        </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                    </div>
+                    </div>
+                 </div>
+             </div>
+             <div class="table-responsive p-9">
+            <table class="table">
+                <thead class="table-warning">
+                    <tr>
+                        <th scope="col">Categoría</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">Labial</th>
+                        <td>
+                            <a class="btn btn-warning">Eliminar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Rubor</th>
+                        <td>
+                            <a class="btn btn-warning">Eliminar</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
              <div class="form-row mb-4">
                 <div class="col-auto col-sm-4 col-md-4 col-lg-4 col-xl-4">
                     <label for="validationDefault01">Precio Venta</label>
