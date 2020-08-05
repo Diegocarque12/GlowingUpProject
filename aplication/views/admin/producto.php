@@ -15,14 +15,10 @@
                     <tr>
                         <th scope="col">Código</th>
                         <th scope="col">Nombre</th>
-                        <th scope="col">Descripción</th>
                         <th scope="col">Marca</th>
                         <th scope="col">Precio V</th>
                         <th scope="col">Cantidad</th>
-                        <th scope="col">Colores</th>
                         <th scope="col">Estado</th>
-                        <th scope="col">Descuento</th>
-                        <th scope="col">Valoración</th>
                         <th scope="col">Foto</th>
                         <th scope="col">Acciones</th>
                     </tr>
@@ -36,10 +32,6 @@
                         <td>Mark</td>
                         <td>Otto</td>
                         <td>@mdo</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
                         <td>
                             <a class="btn btn-warning">M</a>
                             <a class="btn btn-warning">D</a>
@@ -49,10 +41,6 @@
                         <th scope="row">2</th>
                         <td>Jacob</td>
                         <td>Thornton</td>
-                        <td>@fat</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
                         <td>Mark</td>
                         <td>Otto</td>
                         <td>@mdo</td>
@@ -61,32 +49,6 @@
                             <a class="btn btn-warning">M</a>
                             <a class="btn btn-warning">D</a>
                         </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
                     </tr>
                 </tbody>
             </table>

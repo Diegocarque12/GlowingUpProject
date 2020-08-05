@@ -28,6 +28,22 @@ class Producto extends Conexion{
         /*$conexion->__construct();*/
     }
 
+<<<<<<< HEAD
+    public function insertProducto(int $idProducto, string $nombre, string $imagenes, string $descripcion_extensa, string $descripcion_breve, decimal $precioVenta, int $cantidad, string $colores, string $estado, decimal $descuento, decimal $valoracion_general, int $idMarca)
+    {
+        this->db_idProducto = $idProducto;
+        this->db_nombre = $nombre;
+        this->db_imagenes = $imagenes;
+        this->db_descripcion_extensa = $descripcion_extensa;
+        this->db_descripcion_breve = $descripcion_breve;
+        this->db_precioVenta = $precioVenta;
+        this->db_cantidad = $cantidad;
+        this->db_colores = $colores;
+        this->db_estado = $estado;
+        this->db_descuento = $descuento;
+        this->db_valoracion_general = $valoracion_general;
+        this->db_idMarca = $idMarca;
+=======
     public function insertProducto(int $idProducto, string $nombre, string $imagenes, string $descripcion_extensa, string $descripcion_breve, float $precioVenta, int $cantidad, string $colores, string $estado, float $descuento, float $valoracion_general, int $idMarca){
         $this->db_idProducto = $idProducto;
         $this->db_nombre = $nombre;
@@ -41,6 +57,7 @@ class Producto extends Conexion{
         $this->db_descuento = $descuento;
         $this->db_valoracion_general = $valoracion_general;
         $this->db_idMarca = $idMarca;
+>>>>>>> master
 
         /*$this->conexion = new Conexion();
         $this->conexion = $this->conexion->connect();*/
