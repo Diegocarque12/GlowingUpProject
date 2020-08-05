@@ -2,24 +2,6 @@
 class Conexion extends PDO
 {
     public $gbd;
-    /*public function __construct(){
-        $iniData = parse_ini_file("../config/db.php.ini");
-        $host=$iniData["host"];
-        $dbname=$iniData["dbname"];
-        $user=$iniData["user"];
-        $pass=$iniData["pass"];
-        $dsn = "mysql:dbname=".$host.";host=".$dbname;
-
-        try {
-            $this->gbd = new PDO("mysql:host=localhost;dbname=glowingup_db", "root", "");
-            echo 'conexion exitosa';
-        } catch (PDOException $e) {
-            echo 'Falló la conexión: ' . $e->getMessage();
-        }
-    }
-
-    
-    public $con;*/
     public function __construct(){
 
         /* Aquí hay que usar la ruta donde se encuentre el archivo con las credenciales*/
