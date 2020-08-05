@@ -19,7 +19,7 @@ class Producto extends Conexion{
 
     public function __construct(){
         include_once('Conexion.php');
-        $conexion = new Conexion();
+        $this->conexion = new Conexion();
         //$conexion->__construct();*/
     }
 
