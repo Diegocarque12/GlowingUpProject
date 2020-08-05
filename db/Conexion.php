@@ -1,6 +1,25 @@
 <?php
 class Conexion extends PDO
 {
+    public $gbd;
+    /*public function __construct(){
+        $iniData = parse_ini_file("../config/db.php.ini");
+        $host=$iniData["host"];
+        $dbname=$iniData["dbname"];
+        $user=$iniData["user"];
+        $pass=$iniData["pass"];
+        $dsn = "mysql:dbname=".$host.";host=".$dbname;
+
+        try {
+            $this->gbd = new PDO("mysql:host=localhost;dbname=glowingup_db", "root", "");
+            echo 'conexion exitosa';
+        } catch (PDOException $e) {
+            echo 'Falló la conexión: ' . $e->getMessage();
+        }
+    }
+
+    
+    public $con;*/
     public function __construct(){
 
         /* Aquí hay que usar la ruta donde se encuentre el archivo con las credenciales*/
@@ -10,7 +29,6 @@ class Conexion extends PDO
         $user=$iniData["user"];
         $pass=$iniData["pass"];
         $dsn = "mysql:host=$host;dbname=$dbname";
-
     /**
      *  El array $options es muy importante para tener un PDO bien configurado
      *  
@@ -41,15 +59,19 @@ class Conexion extends PDO
                 /* 
                     *Intentar la conexión llamando al constructor del padre que no es otro que PDO
                 */
-                parent::__construct($dsn, $user, $pass, $options);
-                echo 'conexion establecida y segura';
+                $this->gbd = parent::__construct($dsn, $user, $pass,$options);
+                //parent::__construct($dsn, $user, $pass, $options);
+                echo 'conexion establecida y segura '.$this->gbd.' <--esta es la conexion   /    ';
         } catch (PDOException $e) {
             /* Escribir posibles excepciones en el error_log o en pantalla */
             error_log($this->error = $e->getMessage(),0);
             echo "ERROR ".$e->getMessage();
         }
     }
-
+    public function connect(){
+        echo $this->gbd;
+        return $this->gbd;
+    }
 
 }
 ?>
