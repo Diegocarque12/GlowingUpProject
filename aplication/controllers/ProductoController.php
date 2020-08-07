@@ -1,14 +1,14 @@
 <?php
 
-class pruebaController{
+class ProductoC{
 
-    public function insertMarca(){
+    public function RegistrarProductoC(){
         if(isset($_POST['nombre'])){
             $nombre = $_POST['nombre'];
             $arrData = array($nombre);
             
-            $prueba = new PruebaM();
-            $prueba->insertar($arrData);
+            /*$modelo = new ProductoModel();
+            $modelo->insertar($arrData);*/
         }
     }
 }
