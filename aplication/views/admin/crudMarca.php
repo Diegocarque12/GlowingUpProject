@@ -16,6 +16,7 @@
 </div>
 
 <?php
-$registrar = new pruebaController();
-$registrar -> insertMarca();
+
+$registrar = new ProductoC();
+$registrar -> RegistrarProductoC();
 ?>

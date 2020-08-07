@@ -1,5 +1,8 @@
 <?php 
 
+require_once "../aplication/controllers/rutasC.php";
+require_once "../aplication/controllers/ProductoC.php";
+require_once "../aplication/controllers/MarcaC.php";
 
 require_once "../aplication/controllers/rutasC.php";
 require_once "../aplication/controllers/pruebaController.php";
