@@ -18,7 +18,7 @@ class Producto extends Conexion{
     private $conexion;
 
     public function __construct(){
-        include_once('Conexion.php');
+        include_once('-.db/Conexion.php');
         $this->conexion = new Conexion();
     }
 
@@ -42,7 +42,6 @@ class Producto extends Conexion{
         $arrData = array($this->db_idProducto,$this->db_nombre,$this->db_imagenes,$this->db_descripcion_extensa,$this->db_descripcion_breve,$this->db_precioVenta,$this->db_cantidad,$this->db_colores,$this->db_estado,$this->db_descuento,$this->db_valoracion_general,$this->db_idMarca);
         $resInsert = $insert->execute($arrData);
         $idInsert = $this->conexion->lastInsertId();
-        return $idInsert;
     }
 
 }
