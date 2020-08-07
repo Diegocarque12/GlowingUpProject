@@ -20,23 +20,22 @@ class Producto extends Conexion{
     public function __construct(){
         include_once('Conexion.php');
         $this->conexion = new Conexion();
-        //$conexion->__construct();*/
     }
 
-    public function insertProducto(int $idProducto, string $nombre, string $imagenes, string $descripcion_extensa, string $descripcion_breve, float $precioVenta, int $cantidad, string $colores, string $estado, float $descuento, float $valoracion_general, int $idMarca)
+    public function insertProducto(int $idProducto, string $nombre, string $imagenes, string $descripcion_extensa, string $descripcion_breve, decimal $precioVenta, int $cantidad, string $colores, string $estado, decimal $descuento, decimal $valoracion_general, int $idMarca)
     {
-        $this->db_idProducto = $idProducto;
-        $this->db_nombre = $nombre;
-        $this->db_imagenes = $imagenes;
-        $this->db_descripcion_extensa = $descripcion_extensa;
-        $this->db_descripcion_breve = $descripcion_breve;
-        $this->db_precioVenta = $precioVenta;
-        $this->db_cantidad = $cantidad;
-        $this->db_colores = $colores;
-        $this->db_estado = $estado;
-        $this->db_descuento = $descuento;
-        $this->db_valoracion_general = $valoracion_general;
-        $this->db_idMarca = $idMarca;
+        this->db_idProducto = $idProducto;
+        this->db_nombre = $nombre;
+        this->db_imagenes = $imagenes;
+        this->db_descripcion_extensa = $descripcion_extensa;
+        this->db_descripcion_breve = $descripcion_breve;
+        this->db_precioVenta = $precioVenta;
+        this->db_cantidad = $cantidad;
+        this->db_colores = $colores;
+        this->db_estado = $estado;
+        this->db_descuento = $descuento;
+        this->db_valoracion_general = $valoracion_general;
+        this->db_idMarca = $idMarca;
 
         $sql = "INSERT INTO tblproducto(idProducto, nombre, imagenes, descripcion_extensa, descripcion_breve, precioVenta, cantidad, colores, estado, descuento, valoracion_general, idMarca) VALUES(?,?,?,?,?,?,?,?,?,?,?,?)";
         $insert = $this->conexion->prepare($sql);
