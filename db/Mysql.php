@@ -3,18 +3,13 @@
 
     class Mysql extends Conexion{
         private $conexion;
-        private $strquery;
-        private $arrValues;
 
         function __construct(){
             $this->conexion = new Conexion();
-            echo 'conexion lista';
         }
     
         public function insert(string $query, array $arrValues){
-            $this->strquery = $query;
-            $this->arrValues = $arrValues;
-            $insert = $this->conexion->prepare($this->strquery);
+            $insert = $this->conexion->prepare($query);
             $resInsert = $insert->execute($this->arrValues);
             if($resInsert){
                 $lastInsert = $this->conexion->lastInsertId();
@@ -25,27 +20,29 @@
         }
 
         public function select(string $query){
-            $this->strquery = $query;
-            $result = $this->conexion->prepare($this->strquery);
+            $result = $this->conexion->prepare($query);
             $result->execute();
             $data = $result->fetch(PDO::FETCH_ASSOC);
             return $data;
         }
 
         public function selectAll(string $query){
-            $this->strquery = $query;
-            $result = $this->conexion->prepare($this->strquery);
+            $result = $this->conexion->prepare($query);
             $result->execute();
             $data = $result->fetchAll(PDO::FETCH_ASSOC);
             return $data;
         }
 
         public function update(string $query, array $arrValues){
-            $this->strquery = $query;
-            $this->arrValues = $arrValues;
-            $update = $this->conexion->prepare($this->strquery);
+            $update = $this->conexion->prepare($query);
             $resExecute = $update->execute($this->arrValues);
-            return $resExecute;
+            $confirm;
+            if($resExecute){
+                $confirm = 1;
+            }else{
+                $confirm = 0;
+            }
+            return $confirm;
         }
 
     }
