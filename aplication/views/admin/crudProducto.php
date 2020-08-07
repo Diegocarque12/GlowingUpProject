@@ -1,13 +1,21 @@
 <div class="container">
     <h1 class="tituloPrincipal text-center m-4 ">Registrar Producto</h1>
-        <form>
+        <form method="POST">
         <div class="container text-center mt-3">
             <div class="form-row mb-4">
                 <div class="col-auto col-sm-4 col-md-4 col-lg-4 col-xl-4">
                     <label for="validationDefault01">Nombre</label>
                 </div>
                 <div class="col-auto col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                     <input type="text" class="form-control" id="validationDefault01" value="Nombre" required>
+                     <input type="text" id="txtNombre" name="txtNombre" class="form-control" placeholder="Nombre" required>
+                 </div>
+             </div>
+             <div class="form-row mb-4">
+                <div class="col-auto col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                    <label for="validationDefault01">Imagenes</label>
+                </div>
+                <div class="col-auto col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                     <input type="text"  name="txtImagen" class="form-control" placeholder="Nombre" required>
                  </div>
              </div>
              <div class="form-row mb-4">
@@ -15,7 +23,7 @@
                     <label for="validationDefault01">Descripción Extensa</label>
                 </div>
                 <div class="col-auto col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                     <textarea type="ext" class="form-control" id="validationDefault01" rows="3"required></textarea>
+                     <textarea type="text" id="txtDescripcionE" name="txtDescripcionE" class="form-control" rows="3"required></textarea>
                  </div>
              </div>
              <div class="form-row mb-4">
@@ -23,7 +31,7 @@
                     <label for="validationDefault01">Descripción Breve</label>
                 </div>
                 <div class="col-auto col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                     <input type="ext" class="form-control" id="validationDefault01" rows="3"required>
+                     <input type="text" id="txtDescripcionB" name="txtDescripcionB" class="form-control" required>
                  </div>
              </div>
              <div class="form-row mb-4">
@@ -31,14 +39,7 @@
                     <label for="validationDefault01">Marca</label>
                 </div>
                 <div class="col-auto col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                    <div class="dropdown text-left">
-                        <a class="btn btn-warning    dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Seleccione
-                        </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                    </div>
-                    </div>
+                     <input type="text" id="txtMarca" name="txtMarca" class="form-control"  required>
                  </div>
              </div>
              <div class="form-row mb-4">
@@ -46,46 +47,16 @@
                     <label for="validationDefault01">Categoría</label>
                 </div>
                 <div class="col-auto col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                    <div class="dropdown text-left">
-                        <a class="btn btn-warning    dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Seleccione
-                        </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                    </div>
-                    </div>
+                     <input type="text" id="txtCategoria" name="txtCategoria" class="form-control" required  >
                  </div>
              </div>
-             <div class="table-responsive p-9">
-            <table class="table">
-                <thead class="table-warning">
-                    <tr>
-                        <th scope="col">Categoría</th>
-                        <th scope="col">Acciones</th>
-                    </tr>
-                </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">Labial</th>
-                        <td>
-                            <a class="btn btn-warning">Eliminar</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Rubor</th>
-                        <td>
-                            <a class="btn btn-warning">Eliminar</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+             
              <div class="form-row mb-4">
                 <div class="col-auto col-sm-4 col-md-4 col-lg-4 col-xl-4">
                     <label for="validationDefault01">Precio Venta</label>
                 </div>
                 <div class="col-auto col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                     <input type="text" class="form-control" id="validationDefault01" value="Precio venta" required>
+                     <input type="text" id="txtPrecioV" name="txtPrecioV" class="form-control" placeholder="Precio venta" required>
                  </div>
              </div>
              <div class="form-row mb-4">
@@ -93,7 +64,7 @@
                     <label for="validationDefault01">Cantidad</label>
                 </div>
                 <div class="col-auto col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                     <input type="number" class="form-control" id="validationDefault01" value="Cantidad" required>
+                     <input type="number" id="txtCantidad" name="txtCantidad" class="form-control" placeholder="Cantidad" required>
                  </div>
              </div>
              <div class="form-row mb-4">
@@ -101,7 +72,7 @@
                     <label for="validationDefault01">Colores</label>
                 </div>
                 <div class="col-auto col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                     <input type="text" class="form-control" id="validationDefault01" value="Colores" required>
+                     <input type="text" id="txtColores" name="txtColores" class="form-control" placeholder="Colores" required>
                  </div>
              </div>
              <div class="form-row mb-4">
@@ -109,7 +80,7 @@
                     <label for="validationDefault01">Estado</label>
                 </div>
                 <div class="col-auto col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                     <input type="text" class="form-control" id="validationDefault01" value="Estado" required>
+                     <input type="text" id="txtEstado" name="txtEstado" class="form-control" placeholder="Estado" required>
                  </div>
              </div>
              <div class="form-row mb-4">
@@ -117,7 +88,7 @@
                     <label for="validationDefault01">Descuento</label>
                 </div>
                 <div class="col-auto col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                     <input type="text" class="form-control" id="validationDefault01" value="Descuento" required>
+                     <input type="text" id="txtDescuento" name="txtDescuento" class="form-control" placeholder="Descuento" required>
                  </div>
              </div>
              <div class="form-row mb-4">
@@ -125,18 +96,17 @@
                     <label for="validationDefault01">Valoración General</label>
                 </div>
                 <div class="col-auto col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                     <input type="text" class="form-control" id="validationDefault01" value="Valoración" required>
+                     <input type="text" id="txtValoracionG" name="txtValoracionG" class="form-control" placeholder="Valoración" required>
                  </div>
              </div>
-             <div class="form-row mb-4">
-                <div class="col-auto col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                <label for="exampleFormControlFile1">Imagen</label>
-                </div>
-                <div class="col-auto col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                      <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                 </div>
-             </div>
-        <a class="btn btn-warning mb-3" href="<?php echo SERVERURL;?>crudProducto/">Nuevo Producto</a>
+            
+        <input class="btn btn-warning mb-3" type="submit" value="Registrar Producto"></input>
         </div>
         </form>
 </div>
+
+<?php
+
+$registrar = new ProductoC();
+$registrar -> RegistrarProductoC();
+?>
