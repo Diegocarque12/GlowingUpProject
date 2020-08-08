@@ -9,14 +9,15 @@
         }
     
         public function insert(string $query, array $arrValues){
+            $arr = $arrValues;
             $insert = $this->conexion->prepare($query);
-            $resInsert = $insert->execute($arrValues);
+            $resInsert = $insert->execute($arr);
             if($resInsert){
                 $lastInsert = $this->conexion->lastInsertId();
             }else{
                 $lastInsert = 0;
             }
-            $resInsert->colse();
+            $this->conexion->close();
             return $lastInsert;
         }
 
