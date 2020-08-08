@@ -8,16 +8,23 @@
             $this->conexion = new Conexion();
         }
     
-        public function insert(string $query, array $arrValues){
+        public function insert(string $query, array $datos){
             $insert = $this->conexion->prepare($query);
-            $resInsert = $insert->execute($arrValues);
-            if($resInsert){
-                $lastInsert = $this->conexion->lastInsertId();
-            }else{
-                $lastInsert = 0;
-            }
-            $resInsert->colse();
-            return $lastInsert;
+            //$resInsert = 
+            $insert->execute($datos);
+            //echo "Estado".$resInsert;
+            //print_r($insert);
+            //print_r($datos);
+            //print_r($query);
+            //if($resInsert){
+              //  echo "entro en el if";
+                //$lastInsert = $this->conexion->lastInsertId();
+            //}else{
+               // echo "entro en el else";
+              //  $lastInsert = 0;
+            //}
+            //$this->conexion->close();
+            //return $lastInsert;
         }
 
         public function select(string $query){

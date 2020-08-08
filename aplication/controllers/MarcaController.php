@@ -1,13 +1,17 @@
 <?php
 
-class MarcaC{
+class MarcaController{
 
     public function RegistrarMarcaC(){
         if(isset($_POST["txtNombre"])){
-            $datosP = array("nombre"=>$_POST["txtNombre"]);
+            $nombre = $_POST["txtNombre"];
+            $estado = $_POST["txtEstado"];
+
+            $datos = array($nombre,$estado);
 
             $modelo = new MarcaModel();
-            $respuesta = $modelo->registrar($datosP);
+            $respuesta = $modelo->registrar($datos);
+
 
         }
     }
