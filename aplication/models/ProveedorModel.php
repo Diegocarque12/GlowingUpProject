@@ -12,6 +12,11 @@ require_once ("../db/Mysql.php");
             parent::insert($sql,$arrValues);
         }
 
+        public function consultarTodas(){
+            $sql = "SELECT idproveedor, nombre, telefono, email, provincia, estado from tblproveedor";
+            $result = parent::selectAll($sql);
+            return $result;
+        }
     }
 
 ?>

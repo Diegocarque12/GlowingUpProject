@@ -49,5 +49,19 @@
             return $confirm;
         }
 
+        /*public function deactivate(string $query, array $arrValues){
+            $update = $this->conexion->prepare($query);
+            $resExecute = $update->execute($arrValues);
+            
+            $confirm;
+            if($resExecute){
+                $confirm = 1;
+            }else{
+                $confirm = 0;
+            }
+            $resExecute->close();
+            return $confirm;
+        }*/
+
     }
 ?>

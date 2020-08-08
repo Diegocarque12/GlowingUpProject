@@ -15,6 +15,15 @@ class CategoriaController{
         }
     }
 
+    public function ConsultaEspecifica(){
+        if(isset($_GET["idcategoria"])){
+            $id = $_GET["idcategoria"];
+            $modelo = new CategoriaModel();
+            $respuesta = $modelo->consultaEspecifica($id);
+            return $respuesta;
+        }
+    }
+
     public function ConsultarTodas(){
         $modelo = new CategoriaModel();
         $respuesta = $modelo->consultarTodas();

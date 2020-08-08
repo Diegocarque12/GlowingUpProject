@@ -12,8 +12,14 @@ require_once ("../db/Mysql.php");
             parent::insert($sql,$arrValues);
         }
 
+        public function consultaEspecifica($id){
+            $sql = "SELECT * FROM tblcategoria WHERE idcategoria =".$id;
+            $result = parent::select($sql);
+            return $result;
+        }
+
         public function consultarTodas(){
-            $sql = "Select nombre, estado from tblcategoria";
+            $sql = "SELECT idcategoria, nombre, estado FROM tblcategoria";
             $result = parent::selectAll($sql);
             return $result;
         }

@@ -19,6 +19,12 @@ class ProveedorController{
 
         }
     }
+
+    public function ConsultarTodas(){
+        $modelo = new ProveedorModel();
+        $respuesta = $modelo->consultarTodas();
+        return $respuesta;
+    }
 }
 
 ?>
