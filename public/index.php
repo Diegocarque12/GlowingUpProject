@@ -1,14 +1,14 @@
 <?php 
 
-require_once "../aplication/controllers/rutasC.php";
-require_once "../aplication/controllers/ProductoC.php";
-require_once "../aplication/controllers/MarcaC.php";
+require_once "../aplication/controllers/rutasController.php";
+require_once "../aplication/controllers/ProductoController.php";
+require_once "../aplication/controllers/MarcaController.php";
 
-require_once "../aplication/controllers/rutasC.php";
-require_once "../aplication/controllers/pruebaController.php";
+require_once "../aplication/controllers/rutasController.php";
 
-require_once "../aplication/models/rutasM.php";
-require_once "../aplication/models/pruebaM.php";
+require_once "../aplication/models/rutasModel.php";
+require_once "../aplication/models/MarcaModel.php";
+require_once "../aplication/models/ProductoModel.php";
 
 $rutas = new RutasControlador;
 $rutas -> Plantilla();

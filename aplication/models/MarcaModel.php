@@ -2,14 +2,14 @@
 
 require_once ("../db/Mysql.php");
 
-    class MarcaM extends Mysql{
+    class MarcaModel extends Mysql{
         public function __construct(){
             parent::__construct();
         }
 
-        public function registrar(array $arrValues){
-            $sql = "INSERT INTO prueba_marca(nombre) VALUES(?)";
-            parent::insert($sql,$arrValues);
+        public function registrar(array $datos){
+            $sql = "INSERT INTO tblmarca(nombre,estado) VALUES(?,?)";
+            parent::insert($sql,$datos);
         }
 
     }
