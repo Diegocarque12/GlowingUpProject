@@ -51,5 +51,9 @@ class Conexion extends PDO
         }
     }
 
+    public function close(){
+        $this->gbd = null;
+    }
+
 }
 ?>
