@@ -15,7 +15,6 @@
                     "descuento"=>$_POST["txtDescuento"],
                     "valoracion_general"=>$_POST["txtValoracionG"],
                     "idMarca"=>$_POST["txtMarca"]);
-                    echo "entra al guardar";
                 $producto = new ProductoM();
                 $respuesta = $producto->RegistrarProductosM($datosP);
             }
