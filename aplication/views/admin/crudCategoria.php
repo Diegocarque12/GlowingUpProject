@@ -26,6 +26,6 @@
 
 <?php
 
-//$registrar = new ProductoC();
-//$registrar -> RegistrarProductoC();
+$registrar = new CategoriaController();
+$registrar -> registrarCategoria();
 ?>

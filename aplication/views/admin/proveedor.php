@@ -1,3 +1,7 @@
+<?php
+$controller = new ProveedorController();
+$proveedores = $controller->ConsultarTodas();
+?>
 <div class="container">
     <h1 class="tituloPrincipal text-center">Lista de proveedores</h1>
         <div class="row m-2">
@@ -13,25 +17,30 @@
             <table class="table">
                 <thead class="table-warning">
                     <tr>
-                        <th scope="col">Cédula Juridica</th>
                         <th scope="col">Nombre</th>
                         <th scope="col">Telefono</th>
-                        <th scope="col">Direccion</th>
                         <th scope="col">Email</th>
                         <th scope="col">Provincia</th>
                         <th scope="col">Estado</th>
+                        <th scope="col">Acciones</th>
                     </tr>
                 </thead>
-                    <tbody>
+                <tbody>
+                    <?php
+                        foreach ($proveedores as $proveedor) {
+                    ?>
                     <tr>
-                        <td>Mark</td>
-                        <td>Mark</td>
-                        <td>Mark</td>
-                        <td>Mark</td>
-                        <td>Mark</td>
-                        <td>Mark</td>
-                        <td>Mark</td>
+                        <td><?php echo $proveedor['nombre'] ?></td>
+                        <td><?php echo $proveedor['telefono'] ?></td>
+                        <td><?php echo $proveedor['email'] ?></td>
+                        <td><?php echo $proveedor['provincia'] ?></td>
+                        <td><?php echo $proveedor['estado'] ?></td>
+                        <td>
+                            <a class="btn btn-warning">M</a>
+                            <a class="btn btn-warning">D</a>
+                        </td>
                     </tr>
+                        <?php }?>
                 </tbody>
             </table>
         </div>

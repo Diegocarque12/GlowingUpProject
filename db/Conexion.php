@@ -42,8 +42,6 @@ class Conexion extends PDO
                     *Intentar la conexión llamando al constructor del padre que no es otro que PDO
                 */
                 $this->gbd = parent::__construct($dsn, $user, $pass,$options);
-                //parent::__construct($dsn, $user, $pass, $options);
-                echo 'conexion establecida y segura '.$this->gbd.' <--esta es la conexion   /    ';
         } catch (PDOException $e) {
             /* Escribir posibles excepciones en el error_log o en pantalla */
             error_log($this->error = $e->getMessage(),0);

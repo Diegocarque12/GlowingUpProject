@@ -1,3 +1,8 @@
+<?php
+$controller = new CategoriaController();
+$categorias = $controller->ConsultarTodas();
+?>
+
 <div class="container">
     <h1 class="tituloPrincipal text-center">Categoría</h1>
         <div class="row m-2">
@@ -13,19 +18,29 @@
             <table class="table">
                 <thead class="table-warning">
                     <tr>
-                        <th scope="col">ID</th>
                         <th scope="col">Nombre</th>
                         <th scope="col">Estado</th>
+                        <th scope="col">Acciones</th>
                     </tr>
                 </thead>
                     <tbody>
+                    <?php
+                        foreach ($categorias as $categoria) {
+                    ?>
                     <tr>
-                        <td>Mark</td>
-                        <td>Mark</td>
-                        <td>Mark</td>
+                        <td><?php echo $categoria['nombre'] ?></td>
+                        <td><?php echo $categoria['estado'] ?></td>
+                        <td>
+                            <a href="<?php echo SERVERURL;?>crudCategoria/<?php echo ($categoria['idcategoria']) ?>" class="btn btn-warning">M</a>
+                            <a class="btn btn-warning">D</a>
+                        </td>
                     </tr>
+                        <?php }?>
                 </tbody>
             </table>
         </div>
-
+        <?php
+            $controller = new CategoriaController();
+            $categorias = $controller->ConsultaEspecifica();
+        ?>
 </div>
