@@ -1,6 +1,6 @@
 <div class="container">
     <h1 class="tituloPrincipal text-center m-4 ">Registrar Producto</h1>
-        <form method="POST">
+        <form method="POST" enctype="multipart/form-data">
         <div class="container text-center mt-3">
             <div class="form-row mb-4">
                 <div class="col-auto col-sm-4 col-md-4 col-lg-4 col-xl-4">
@@ -14,8 +14,8 @@
                 <div class="col-auto col-sm-4 col-md-4 col-lg-4 col-xl-4">
                     <label for="validationDefault01">Imagenes</label>
                 </div>
-                <div class="col-auto col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                     <input type="text"  name="txtImagen" class="form-control" placeholder="Nombre" required>
+                <div class="col-auto col-sm-6 col-md-6 col-lg-6 col-xl-6 text-left">
+                    <input type="file" name="imagen[]" value="" multiple>
                  </div>
              </div>
              <div class="form-row mb-4">
@@ -39,7 +39,16 @@
                     <label for="validationDefault01">Marca</label>
                 </div>
                 <div class="col-auto col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                     <input type="text"  name="txtMarca" class="form-control"  required>
+                     <select type="text"  name="txtMarca" class="form-control"  required>
+                     <?php
+                        foreach($data as $data){ ?>
+                            <option value="0"> <?php print($data);?></option>
+                        
+                        <?php
+                        }
+                     ?>
+                       
+                     </select>
                  </div>
              </div>
              <div class="form-row mb-4">
@@ -107,6 +116,6 @@
 
 <?php
 
-$registrar = new ProductoC();
+$registrar = new ProductoController();
 $registrar -> RegistrarProductoC();
 ?>
